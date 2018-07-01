@@ -4,6 +4,7 @@ public class Artist {
 	
 	private int id ;
 	private String artist ;
+	private int numAscolti;
 	
 	public Artist(int id, String artist) {
 		super();
@@ -11,6 +12,20 @@ public class Artist {
 		this.artist = artist;
 	}
 	
+	
+	public Artist(String artist, int numAscolti) {
+		super();
+		this.artist = artist;
+		this.numAscolti = numAscolti;
+	}
+
+
+	public int getNumAscolti() {
+		return numAscolti;
+	}
+	public void setNumAscolti(int numAscolti) {
+		this.numAscolti = numAscolti;
+	}
 	public int getId() {
 		return id;
 	}
